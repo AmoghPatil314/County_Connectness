@@ -24,12 +24,14 @@ connectedness|>
   geom_point(color="black") +
   geom_smooth(method="lm", 
               color="blue",
-              formula=y~x) +
+              formula=y~x,
+              se= FALSE) +
   scale_x_log10(label=comma) +
   labs(title = "US County Population versus Economic Connectedness",
        subtitle="Population Size does not matter to EC", 
        x="Population",
-       y="Economic Connectedness")
+       y="Economic Connectedness",
+       caption = "Oppertunity Insight")
 ```
 
 
