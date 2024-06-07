@@ -1,6 +1,22 @@
+ ---
+title: "Counties EC"
+author: "Amogh Patil"
+format: html
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| label: "Setup"
 library(primer.data)
 library(tidyverse)
 library(scales)
+```
+
+
+```{r}
+#| echo: false
+#| label: "Graph"
 connectedness|>
   drop_na()|>
   ggplot(mapping=aes(x=population, 
@@ -14,6 +30,6 @@ connectedness|>
        subtitle="Population Size does not matter to EC", 
        x="Population",
        y="Economic Connectedness")
-
+```
 
 
